@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		jdoodle api
+	</title>
+</head>
+<body>
+	
+	<form action="api/execute" method="POST" id="form">
+	
+		<label for="language">choose language</label>
+		<input list="language" type="options" name="language">
+		<datalist id="language">
+		    <option value="c">
+		    <option value="cpp14">
+		    <option value="python3">
+		    <option value="nodejs">
+		    <option value="java">
+		</datalist>
+		<br>
+		<label for="version"> choose language version</label>
+		<input list="version" type="options" name="versionIndex">
+		<datalist id="version">
+		    <option value="0">
+		    <option value="1">
+		    <option value="2">
+		    <option value="3">
+		</datalist>
+		<br>
+		<textarea name="code" form="form"> write code here... </textarea>
+        <input type="submit" value="compile and run">	
+	</form>
+
+</body>
+</html>
